@@ -1,4 +1,3 @@
-// import logo from './logo.svg';
 import './App.css';
 import Profile from './components/Profile/Profile';
 import Statistics from 'components/Statistics/Statistics';
@@ -22,7 +21,6 @@ export default function App() {
         tag={userData.tag}
         location={userData.location}
       />
-
       <Statistics title="Upload stats">
         <StatisticsList items={dataStatistics} />
       </Statistics>
