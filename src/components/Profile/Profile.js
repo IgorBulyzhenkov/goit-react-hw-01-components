@@ -4,7 +4,6 @@ import '../Utils.css';
 
 
 export default function Profile(props) {
-  console.log(props);
   const { src, location, tag, userName, followers, views, likes } = props;
   return (
     <div className="profile">
