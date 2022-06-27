@@ -1,18 +1,20 @@
 import PropTypes from 'prop-types';
 import { getRandomHexColor } from './random-color';
+import s from './Statistics.module.css';
+import '../Utils.css'
 
 export default function StatisticsList({ items }) {
   return (
-    <ul className="stat-list">
+    <ul className={s.statList}>
       {items.map(({ id, label, percentage }) => {
         return (
           <li
-            className="item"
+            className={s.item}
             key={id}
             style={{ backgroundColor: getRandomHexColor() }}
           >
-            <span className="label">{label}</span>
-            <span className="percentage">{percentage}%</span>
+            <span className={s.label}>{label}</span>
+            <span className={s.percentage}>{percentage}%</span>
           </li>
         );
       })}

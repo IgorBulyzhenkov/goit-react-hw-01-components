@@ -6,8 +6,9 @@
     border-radius: 5px;
 }
 
-.stat-list {
+.statList {
     display: flex;
+
 }
 
 .title {
@@ -15,4 +16,12 @@
     padding: 0;
     padding-top: 15px;
     padding-bottom: 15px;
+}
+
+.item {
+    width: calc(100%/5);
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
